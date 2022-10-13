@@ -34,6 +34,7 @@
 		.container{
 			display: flex;
 			flex-direction: column;
+			justify-content: space-between;
 			
 		}
 
@@ -60,6 +61,16 @@
 			display: flex;
 			flex-direction: row;
 			justify-content: space-between;
+		}
+
+		.click{
+			padding-left: 50px;
+			padding-right: 50px;
+			padding-bottom: 10px;
+			padding-top: 10px;
+			margin-top: 30px;
+			background-color: white;
+			border-radius:  10px;
 		}
 
 		a{
@@ -98,15 +109,30 @@
 
 		}
 
-		.click{
-			padding-left: 50px;
-			padding-right: 50px;
-			padding-bottom: 10px;
-			padding-top: 10px;
-			margin-top: 30px;
-			background-color: white;
-			border-radius:  10px;
+			.social{
+			display: flex;
+			justify-content: center;
+			width: 100%;
+			margin-bottom: 30px;
+
 		}
+		.socialImage{
+			
+			width: 25px;
+			height: 25px;
+			margin-left: 17px;
+			margin-right: 17px;
+			margin-top: 20px;
+		}
+
+		.hidden{
+			display: none;
+		}
+
+
+
+
+
 
 
 
@@ -123,10 +149,23 @@
 			<div class="line white"></div>
 		</a>
 
+<<<<<<< Updated upstream
+=======
+<<<<<<< HEAD
+		<div class="links hidden">
+			<div class="info"><a href="#"> <h4 class="white">Hompage</h4></a></div>
+			<div class="info "><a href="#"><h4 class="white">About</h4></a></div>
+			<div class="info "><a href="#"><h4 class="white">Contacts</h4></a></div>
+=======
+>>>>>>> Stashed changes
 		<div class="links">
 			<div class="info font-oswald"><a href="#"> <h4 class="white">Hompage</h4></a></div>
 			<div class="info font-oswald"><a href="#"><h4 class="white">About</h4></a></div>
 			<div class="info font-oswald"><a href="#"><h4 class="white">Contacts</h4></a></div>
+<<<<<<< Updated upstream
+=======
+>>>>>>> feautre-font
+>>>>>>> Stashed changes
 			
 		</div>
 			
@@ -137,14 +176,37 @@
 			<div class="text white">
                <h1>This is my wonderful page</h1>
 		    </div>
-
 		    <div class="click">
-	            <a href="#" class="button"> Click here </a>
-			</div>
+	        <a href="#" class="button"> Click here </a>
+			
+		</div>
+
 		</div>
 		
 
+		<div class="social">
+		<a href=""><img width="30px" class="socialImage" src="logoYoutube.png"></a>
+		<a href=""><img width="30px" class="socialImage" src="logoInstagram.png"></a>
+		<a href=""><img width="30px" class="socialImage" src="logoFacebook.png"></a>
 	</div>
+	</div>
+	
 
+
+
+
+	</div>
+<script type="text/javascript">
+	let btn=document.querySelector(".menu");
+	let linea= document.querySelector(".links")
+	btn.addEventListener("click", function(event){
+		if (linea.classList.contains("hidden")) {
+			linea.classList.toggle("hidden")
+		}else{
+			linea.classList.add("hidden")
+		}
+	})
+
+</script>
 </body>
 </html>
