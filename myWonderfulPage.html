@@ -10,13 +10,16 @@
 		.background{
 			width: 100%;
 			height: 100vh;
-			display: flex;
-			flex-direction: column;
-			justify-content: space-between;
 			background-image: url("sfondo.png");
 			background-size: cover;
 			background-position: center;
 			background-repeat: no-repeat;
+		}
+
+		.container{
+			display: flex;
+			flex-direction: column;
+			
 		}
 
 		.nav{
@@ -63,6 +66,34 @@
 			margin-right: 35px;
 		}
 
+		.text{
+			
+			min-width: 1128px;
+			display: flex;
+			justify-content: center;
+
+		}
+
+		#page{
+			display: flex;
+			flex-direction: column;
+			justify-content: center;
+			align-items: center;
+			
+
+		}
+
+		.click{
+			padding-left: 50px;
+			padding-right: 50px;
+			padding-bottom: 10px;
+			padding-top: 10px;
+			margin-top: 30px;
+			background-color: white;
+			border-radius:  10px;
+		}
+
+
 
 
 	</style>
@@ -85,6 +116,17 @@
 		</div>
 			
 		</header>
+
+		<div id="page">
+			
+			<div class="text white">
+               <h1>This is my wonderful page</h1>
+		    </div>
+
+		    <div class="click">
+	            <a href="#" class="button"> Click here </a>
+			</div>
+		</div>
 		
 
 	</div>
